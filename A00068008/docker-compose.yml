@@ -1,0 +1,135 @@
+version: "3"
+services:
+  web:
+    image: tutum/hello-world
+    networks:
+      - webnet
+    ports:
+      - "80:80"
+    logging:
+      driver: "fluentd" # Logging Driver
+      options:
+        tag: tutum    # TAG
+    deploy:
+      restart_policy:
+           condition: on-failure
+           delay: 20s
+           max_attempts: 3
+           window: 120s
+      mode: replicated
+      replicas: 44
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 20M
+      placement: 
+        constraints:
+          - node.role == worker
+      update_config:
+        delay: 2s
+
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      restart_policy:
+           condition: on-failure
+           delay: 20s
+           max_attempts: 3
+           window: 120s
+      mode: replicated
+      replicas: 1
+      update_config:
+        delay: 2s
+      placement:
+        constraints: [node.role == manager]
+    logging:
+        driver: "fluentd"
+        options:
+         tag: visualizer   #TAG 
+    networks:
+      - webnet
+      
+  fluentd:
+    image: pauandre27/myfluentd:sd-exam2
+    volumes:
+      - ./Logs:/fluentd/log
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    networks:
+      - webnet
+    deploy:
+      restart_policy:
+           condition: on-failure
+           delay: 20s
+           max_attempts: 3
+           window: 120s
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+      update_config:
+        delay: 2s
+
+  elasticsearch:
+    image: elasticsearch
+    ports:
+      - "9200:9200"
+    networks:
+      - webnet
+    environment:
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    logging:
+        driver: "json-file"
+        options:
+          max-size: 10M
+          max-file: 1  
+    deploy:
+      restart_policy:
+           condition: on-failure
+           delay: 20s
+           max_attempts: 3
+           window: 120s
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+      update_config:
+        delay: 2s
+      resources:
+        limits:
+          memory: 1000M
+    volumes:
+      - ./esdata:/usr/share/elasticsearch/data
+
+kibana:
+    image: kibana
+    ports:
+      - "5601:5601"
+    networks:
+      - webnet
+    logging:
+        driver: "json-file"
+        options:
+           max-size: 10M
+           max-file: 1        
+    deploy:
+      restart_policy:
+           condition: on-failure
+           delay: 20s
+           max_attempts: 3
+           window: 120s
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+      update_config:
+        delay: 2s  
+
+networks:
+  webnet:
