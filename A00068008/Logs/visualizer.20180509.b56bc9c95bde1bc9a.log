@@ -1,0 +1,20 @@
+{"container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stderr","log":"npm info it worked if it ends with ok"}
+{"container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stderr","log":"npm info using npm@5.3.0","container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2"}
+{"container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stderr","log":"npm info using node@v8.2.1"}
+{"container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stderr","log":"npm info lifecycle swarmVisualizer@0.0.1~prestart: swarmVisualizer@0.0.1","container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2"}
+{"source":"stderr","log":"npm info lifecycle swarmVisualizer@0.0.1~start: swarmVisualizer@0.0.1","container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r"}
+{"log":"","container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stdout"}
+{"source":"stdout","log":"> swarmVisualizer@0.0.1 start /app","container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r"}
+{"container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stdout","log":"> node server.js"}
+{"container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stdout","log":""}
+{"container_id":"188d70747e3eef1d63e1b368f0b76ff7e7766142184a3144d6acc9763fc4c0f2","container_name":"/parcial2_visualizer.1.irtdhkvaz2youkz4kwe952l2r","source":"stdout","log":"undefined"}
+{"source":"stderr","log":"npm info it worked if it ends with ok","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot"}
+{"container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stderr","log":"npm info using npm@5.3.0"}
+{"container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stderr","log":"npm info using node@v8.2.1"}
+{"log":"npm info lifecycle swarmVisualizer@0.0.1~prestart: swarmVisualizer@0.0.1","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stderr"}
+{"log":"npm info lifecycle swarmVisualizer@0.0.1~start: swarmVisualizer@0.0.1","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stderr"}
+{"source":"stdout","log":"","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot"}
+{"source":"stdout","log":"> swarmVisualizer@0.0.1 start /app","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot"}
+{"container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5","container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stdout","log":"> node server.js"}
+{"container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stdout","log":"","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5"}
+{"container_name":"/sd-exam2_visualizer.1.snudl5emc6sh1d029gbvgdvot","source":"stdout","log":"undefined","container_id":"b00522ec9da06ffccff3d850fca2861c0d78a4a1198eda9f1eb860368d0c12e5"}

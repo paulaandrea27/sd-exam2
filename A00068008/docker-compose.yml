@@ -1,4 +1,5 @@
 version: "3"
+
 services:
   web:
     image: tutum/hello-world
@@ -9,7 +10,7 @@ services:
     logging:
       driver: "fluentd" # Logging Driver
       options:
-        tag: tutum    # TAG
+        tag: tutum
     deploy:
       restart_policy:
            condition: on-failure
@@ -17,7 +18,7 @@ services:
            max_attempts: 3
            window: 120s
       mode: replicated
-      replicas: 44
+      replicas: 4
       resources:
         limits:
           cpus: "0.1"
@@ -49,14 +50,14 @@ services:
     logging:
         driver: "fluentd"
         options:
-         tag: visualizer   #TAG 
+         tag: visualizer 
     networks:
       - webnet
       
   fluentd:
     image: pauandre27/myfluentd:sd-exam2
     volumes:
-      - ./Logs:/fluentd/log
+      - "./Logs:/fluentd/log"
     ports:
       - "24224:24224"
       - "24224:24224/udp"
@@ -105,9 +106,9 @@ services:
         limits:
           memory: 1000M
     volumes:
-      - ./esdata:/usr/share/elasticsearch/data
+      - "./esdata:/usr/share/elasticsearch/data"
 
-kibana:
+  kibana:
     image: kibana
     ports:
       - "5601:5601"
