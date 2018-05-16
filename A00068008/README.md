@@ -259,10 +259,7 @@ docker stack deploy -c docker-compose.yml sdparcial2
 
 ![][5]
 
-Esto afecta la visualización en kibana, por lo que la pantalla que se ve muestra estadísticas mas no los archivos en formato json ni las gráficas. Se agregó al docker-compose un healthcheck para verificar qué estaba pasando al inicializar el contenedor, de esta forma se obtuvieron estos logs:
-	* {"log":"Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes/0/node.lock\n”
-	* {"log":"Caused by: java.io.IOException: failed to obtain lock on /usr/share/elasticsearch/data/nodes/0\n”,
-	* {"log":"Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[/usr/share/elasticsearch/data/myclustersss]] with lock id [0]; maybe these locations are not writable or multiple n.
+Esto afecta la visualización en kibana, por lo que la pantalla que se ve muestra estadísticas mas no los archivos en formato json ni las gráficas. Se agregó al docker-compose un healthcheck para verificar qué estaba pasando al inicializar el contenedor, de esta forma se obtuvieron estos logs: {"log":"Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes/0/node.lock\n”},{"log":"Caused by: java.io.IOException: failed to obtain lock on /usr/share/elasticsearch/data/nodes/0\n”},{"log":"Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[/usr/share/elasticsearch/data/myclustersss]] with lock id [0]; maybe these locations are not writable or multiple n}.
 
 ### Referencias
 * https://docs.docker.com/compose/install/
