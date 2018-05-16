@@ -1,1 +1,0 @@
-### Imágenes evidencia del montaje
