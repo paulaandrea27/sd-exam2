@@ -1,9 +1,9 @@
 ### Parcial 2
 **Universidad ICESI**  
-**Curso:** Sistemas Distribuidos  		
-**Docente:** Daniel Barragán		
-**Tema:** Automatización de infraestructura (Docker)  		
-**Estudiante:** Paula Andrea Bolaños Arias		
+**Curso:** Sistemas Distribuidos                   
+**Docente:** Daniel Barragán              
+**Tema:** Automatización de infraestructura (Docker)                 
+**Estudiante:** Paula Andrea Bolaños Arias                 
 
 ### Objetivos
 * Realizar de forma autónoma el aprovisionamiento automático de infraestructura
