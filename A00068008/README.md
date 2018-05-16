@@ -1,7 +1,6 @@
 ### Parcial 2
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
-**Docente:** Daniel Barragán C.  
 **Tema:** Automatización de infraestructura (Docker)  
 **Estudiante:** Paula Andrea Bolaños Arias
 **URL:** www.github.com/paulaandrea27/sd-exam2
