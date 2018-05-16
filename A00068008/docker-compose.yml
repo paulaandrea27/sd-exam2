@@ -1,6 +1,7 @@
 version: "3"
 
 services:
+
   web:
     image: tutum/hello-world
     networks:
@@ -78,13 +79,20 @@ services:
 
   elasticsearch:
     image: elasticsearch
+    command: [ elasticsearch, -E, "network.host=_eth1:ipv4_", -E, discovery.zen.ping.unicast.hosts=tasks.sss_elasticsearch, -E, discovery.zen.minimum_master_nodes=2, -E, cluster.name=myclustersss ]
     ports:
       - "9200:9200"
+      - "9300:9300"
     networks:
       - webnet
     environment:
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    healthcheck:
+        test: ping -c1 localhost >/dev/null 2>&1 || exit 1
+        interval: 1m
+        timeout: 10s
+        retries: 3
     logging:
         driver: "json-file"
         options:
