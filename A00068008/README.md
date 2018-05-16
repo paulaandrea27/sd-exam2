@@ -1,9 +1,9 @@
 ### Parcial 2
 **Universidad ICESI**  
 **Curso:** Sistemas Distribuidos  
-**Tema:** Automatización de infraestructura (Docker)  
+**Docente:** Daniel Barragán
+**Tema:** Automatización de infraestructura (Docker)  
 **Estudiante:** Paula Andrea Bolaños Arias
-**URL:** www.github.com/paulaandrea27/sd-exam2
 
 ### Objetivos
 * Realizar de forma autónoma el aprovisionamiento automático de infraestructura
@@ -269,6 +269,8 @@ Esto afecta la visualización en kibana, por lo que la pantalla que se ve muestr
 * https://docs.docker.com/compose/compose-file/
 * https://docs.docker.com/engine/swarm/stack-deploy/
 * http://www.littlebigextra.com/using-kibana-and-elasticsearch-for-log-analysis-with-fluentd-on-docker-swarm/
+
+**URL Repositorio:** www.github.com/paulaandrea27/sd-exam2
 
 [1]: images/diagrama_despliegue.png
 [2]: images/visualizer.png
